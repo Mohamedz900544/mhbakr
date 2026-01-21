@@ -10,6 +10,7 @@ import {
 import { Language, translations } from '../lib/translations';
 import { translateContent } from '../lib/ai';
 
+
 interface DoctorProfilePageProps {
   doctor: Doctor | null;
   setPage: (page: Page) => void;

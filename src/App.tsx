@@ -1,30 +1,30 @@
 
 import React, { useState, useEffect, Suspense, lazy } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Notification, { NotificationType } from './components/Notification';
-import VetBot from './components/VetBot';
-import CartDrawer from './components/CartDrawer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Notification, { NotificationType } from '../components/Notification';
+import VetBot from '../components/VetBot';
+import CartDrawer from '../components/CartDrawer';
 import LoginModal from './components/LoginModal';
-import SplashScreen from './components/SplashScreen';
+import SplashScreen from '../components/SplashScreen';
 import { Page, Doctor, Product, CartItem, UserRole, Appointment, Order, Prescription, User, SystemSettings, BlogPost, ForumTopic, AdoptionPet } from './types';
-import { MOCK_APPOINTMENTS } from './constants'; 
+import { MOCK_APPOINTMENTS } from '../constants'; 
 import { ArrowUp, ShoppingBag, Loader2 } from 'lucide-react';
 import { Language } from './lib/translations';
 import { api } from './services/api';
 
 // Lazy Load Pages for Performance
-const LandingPage = lazy(() => import('./pages/LandingPage'));
-const SearchPage = lazy(() => import('./pages/SearchPage'));
-const DoctorProfilePage = lazy(() => import('./pages/DoctorProfilePage'));
-const ShopPage = lazy(() => import('./pages/ShopPage'));
-const ProductDetailsPage = lazy(() => import('./pages/ProductDetailsPage'));
-const CommunityPage = lazy(() => import('./pages/CommunityPage'));
-const ClientDashboard = lazy(() => import('./pages/ClientDashboard'));
+const LandingPage = lazy(() => import('../pages/LandingPage'));
+const SearchPage = lazy(() => import('../pages/SearchPage'));
+const DoctorProfilePage = lazy(() => import('../pages/DoctorProfilePage'));
+const ShopPage = lazy(() => import('../pages/ShopPage'));
+const ProductDetailsPage = lazy(() => import('../pages/ProductDetailsPage'));
+const CommunityPage = lazy(() => import('../pages/CommunityPage'));
+const ClientDashboard = lazy(() => import('../pages/ClientDashboard'));
 const DoctorDashboard = lazy(() => import('./pages/DoctorDashboard'));
-const AdminDashboard = lazy(() => import('./pages/AdminDashboard')); 
-const ForumPage = lazy(() => import('./pages/ForumPage'));
-const RewardsPage = lazy(() => import('./pages/RewardsPage'));
+const AdminDashboard = lazy(() => import('../pages/AdminDashboard')); 
+const ForumPage = lazy(() => import('../pages/ForumPage'));
+const RewardsPage = lazy(() => import('../pages/RewardsPage'));
 
 interface NotificationState {
   message: string;

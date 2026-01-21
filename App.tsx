@@ -71,7 +71,7 @@ const App: React.FC = () => {
   // User Specific Data (derived from shared state ideally, but here separated for simulation)
   const [userOrders, setUserOrders] = useState<Order[]>([]); 
   const [prescriptions, setPrescriptions] = useState<Prescription[]>([]);
-  const [doctorRequests, setDoctorRequests] = useState<Appointment[]>([]);
+const [doctorRequests] = useState<Appointment[]>([]);
   
   const [systemSettings, setSystemSettings] = useState<SystemSettings>({
       siteName: 'البيطار',

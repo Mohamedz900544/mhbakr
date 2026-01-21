@@ -1,5 +1,12 @@
 
-import { MOCK_DOCTORS, MOCK_APPOINTMENTS, MOCK_PRODUCTS, MOCK_BLOGS, MOCK_FORUM, MOCK_ADOPTION } from '../constants';
+import {
+  MOCK_DOCTORS,
+  MOCK_APPOINTMENTS,
+  MOCK_PRODUCTS,
+  MOCK_BLOGS,
+  MOCK_FORUM,
+  MOCK_ADOPTION,
+} from '../constants';
 import { Doctor, Appointment, Product, Order, BlogPost, ForumTopic, AdoptionPet } from '../types';
 
 const API_URL = process.env.VITE_API_URL || 'http://localhost:5000/api';

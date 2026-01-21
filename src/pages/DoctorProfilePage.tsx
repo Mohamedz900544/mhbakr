@@ -8,7 +8,7 @@ import {
   AlertCircle, Home, LayoutDashboard, X, Sparkles, ChevronDown, ChevronUp, GraduationCap, Loader2
 } from 'lucide-react';
 import { Language, translations } from '../lib/translations';
-import { translateContent } from '../lib/ai';
+import { translateContent } from '../../lib/ai';
 
 interface DoctorProfilePageProps {
   doctor: Doctor | null;
